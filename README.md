@@ -11,6 +11,8 @@ Escolhi trabalhar com dados de endereços do Brasil porque são informações am
 - `main.py`: Script principal contendo todo o código do projeto.
 - `README.md`: Documentação do projeto.
 - `requirements.txt`: Arquivo contendo todas as dependências necessárias para executar o projeto.
+- `ceps.csv`: Arquivo csv com uma única coluna a ser editada pelo usuário e que deverá conter os ceps a serem procurados
+- `dados_extraidos_ceps.xlsx`: Arquivo excel contendo as informações extraída em cada tabela dentro do notebook, para maior versatilidade em ambientes corporativos
 
 
 ## Configuração do Ambiente
@@ -23,8 +25,9 @@ Escolhi trabalhar com dados de endereços do Brasil porque são informações am
 
 2. Crie e ative um ambiente virtual:
     ```bash
+    cd /caminho/para/seu/projeto
     python -m venv venv
-    source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+    source venv\Scripts\activate 
     ```
 
 3. Instale as dependências:
@@ -32,12 +35,24 @@ Escolhi trabalhar com dados de endereços do Brasil porque são informações am
     pip install -r requirements.txt
     ```
 
+4. Abra o Jupyter Notebook:
+    ```bash
+    jupyter notebook
+    ```
 
-## Dependências
+5. Abra o 'projeto_final_coder.ipynb'
+
+6. No Jupyter Notebook, vá em "Kernel" > "Change Kernel" > "Python (venv)"
+
+7. Execute todas as células
+
+## Principais dependências
 
 - pandas==2.1.2
 - requests==2.31.0
 - plyer==2.1.0
+- SQLAlchemy==2.0.31
+- jupyter==1.0.0
 
 ## Processo de Extração de Dados
 
