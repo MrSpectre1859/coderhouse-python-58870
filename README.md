@@ -8,7 +8,7 @@ Escolhi trabalhar com dados de endereços do Brasil porque são informações am
 
 ## Estrutura do Projeto
 
-- `main.py`: Script principal contendo todo o código do projeto.
+- `main.ipynb`: Script principal contendo todo o código do projeto.
 - `README.md`: Documentação do projeto.
 - `requirements.txt`: Arquivo contendo todas as dependências necessárias para executar o projeto.
 - `ceps.csv`: Arquivo csv com uma única coluna a ser editada pelo usuário e que deverá conter os ceps a serem procurados
@@ -70,23 +70,26 @@ Os dados são extraídos de APIs públicas disponibilizadas pelo BrasilAPI:
 
 #### df_table_1
 
-* cep: Código de Endereçamento Postal.
-* state: Estado.
-* city: Cidade.
-* neighborhood: Bairro.
-* street: Rua.
+* cep: Código de Endereçamento Postal,
+* estado: noem do estado,
+* cidade: nome da cidade,
+* bairro: nome do bairro ,
+* rua: nome da rua
 
 #### df_table_2
 
-* nome: Nome do município.
-* codigo_ibge: Código IBGE do município.
+* estado : nome do estado,
+* nome: Nome do município,
+* codigo_ibge: Código IBGE do município
 
 ### df_table_3
 
-* id: Número identificador do estado.
-* sigla: Sigla do estado.
-* nome: Nome do estado.
-* regiao: dicionário que id da região que o estado se encontra, sigla, e nome da região.
+* id:  identificador único do estado,
+* sigla: Sigla do estado,
+* nome: Nome do estado,
+* id_regiao: identificador único da região,
+* sigla_regiao: sigla da região,
+* nome_regiao: nome da região,
 
 ### Exemplo de extração de dados
 
